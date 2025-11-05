@@ -32,7 +32,7 @@ function createGrid(size){
 gridButton = document.querySelector(".newGridButton")
 gridButton.addEventListener('click', () => {
     newSize = prompt("Enter a number from 1-100");
-    if(/^(100|[0-9?[0-9])$/.test(newSize)){
+    if(/^(100|[1-9]\d?)$/.test(newSize)){
         gridContainer.innerHTML = "";
         createGrid(newSize)
     }
