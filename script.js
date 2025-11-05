@@ -1,5 +1,7 @@
 gridContainer = document.querySelector(".container")
 
+// Trying to add branch to git repo
+
 function createGrid(size){
     const box_width = gridContainer.offsetWidth / size;
     const box_height = gridContainer.offsetWidth / size;
