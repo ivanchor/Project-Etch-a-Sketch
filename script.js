@@ -29,6 +29,19 @@ function createGrid(size){
     }
 }
 
+gridButton = document.querySelector(".newGridButton")
+gridButton.addEventListener('click', () => {
+    newSize = prompt("Enter a number from 1-100");
+    if(/^(100|[0-9?[0-9])$/.test(newSize)){
+        gridContainer.innerHTML = "";
+        createGrid(newSize)
+    }
+    else{
+        alert("Invalid number")
+    }
+    
+})
+
 createGrid(16)
 console.log(gridContainer.offsetWidth/16)
 console.log(gridContainer.offsetWidth)
