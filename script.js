@@ -15,13 +15,17 @@ function createGrid(size){
         // box.style.width=`calc(1000px/${size})`;
         // box.style.height=`calc(1000px/${size})`;
 
-
+        let opac = 0
         box.addEventListener('mouseover', () => {
             red   =  Math.floor(Math.random() * 255);
             green =  Math.floor(Math.random() * 255);
             blue  =  Math.floor(Math.random() * 255);
 
-            box.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            opac += 0.2
+
+            box.style.background = `rgba(${red}, ${green}, ${blue}, ${opac})`;
+            // box.style.opacity = opac;
+            //console.log("This box opac " + opac)
             // if(box.style.backgroundColor == 'white')
             //     box.style.backgroundColor = 'black';
             // else
