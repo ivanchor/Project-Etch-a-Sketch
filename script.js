@@ -17,10 +17,15 @@ function createGrid(size){
 
 
         box.addEventListener('mouseover', () => {
-            if(box.style.backgroundColor == 'white')
-                box.style.backgroundColor = 'black';
-            else
-                box.style.backgroundColor = 'white';
+            red   =  Math.floor(Math.random() * 255);
+            green =  Math.floor(Math.random() * 255);
+            blue  =  Math.floor(Math.random() * 255);
+
+            box.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            // if(box.style.backgroundColor == 'white')
+            //     box.style.backgroundColor = 'black';
+            // else
+            //     box.style.backgroundColor = 'white';
             
         })
 
